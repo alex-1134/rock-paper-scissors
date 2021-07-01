@@ -5,36 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
     <title>LET'S PLAY</title>
 </head>
 <body>
 
     <div class="select">  <!-- Button selection for the player -->
-        <button class="btn">ROCK</button>
-        <button class="btn">PAPER</i></button>
-        <button class="btn">SCISSORS</i></button>
+        <button class="btn" data-selection="rock">ROCK</button>
+        <button class="btn" data-selection="paper">PAPER</i></button>
+        <button class="btn" data-selection="scissors">SCISSORS</i></button>
     </div>
 
-    <div class="move">Your move!</div>
+    <!--<div class="move">Your move!</div>-->
+
+    <div class="card"> <!-- Shows which cards/options both players chose -->
+        
+        <div id="players-card">players card</div>
+        <div id="computers-card">computers card</div>
+
+    </div>
 
     <div class="results">
-        <div class="result-player"> <!-- Player's results -->
+        <div id="player-result"> <!-- Player's results -->
             <h2>You</h2>
             <p class="count">0</p>
         </div>
 
-        <div class="result-computer"> <!-- Computer's results -->
+        <div id="computer-result"> <!-- Computer's results -->
             <h2>Me</h2>
             <p class="count">0</p>
         </div>
     </div>
 
-    <div class="final-results"></div> <!-- Final result of the game-->
+    <div id="final-results"></div> <!-- Final result of the game-->
 
     <button class="reload"></button> <!-- Start a new game-->
     <button class="exit"></button> <!-- Exit the game-->
 
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
