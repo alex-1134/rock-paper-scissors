@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+<h2>Computer choice:<span id="computer-choice"></span></h2>
+<h2>Your choice:<span id="your-choice"></span></h2>
+<h2>Result:<span id="result"></span></h2>
+
+
+<button id="rock">rock</button>
+<button id="paper">paper</button>
+<button id="scissors">scissors</button>
+
+
+
+
+
+
+
+
+    <!-- <a href="game.html">PLAY</a> -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+const computerChoiceDisplay = document.getElementById('computer-choice')
+const userChoiceDisplay = document.getElementById('user-choice')
+const resultDisplay = document.getElementById('result')
+const possibleChoices = document.getElementById.querySelectorAll('button')
+let userChoice
+
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', () => {
+    userChoice = e.target.id
+    userChoiceDisplay.innerHTML = userChoice
+}))
