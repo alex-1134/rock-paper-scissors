@@ -1,17 +1,55 @@
+/*let playersChoice;
+let computersChoice;
+let gameResults; */
 
-const playersCard = document.getElementById('players-card')
-const computersCard = document.getElementById('computers-card')
-const playerResult = document.getElementById('player-result')
-const computerResult = document.getElementById('computer-result')
-const finalResults = document.getElementById('final-results')
-const possibleChoices = document.getElementsByClassName('btn')
-let userChoice
-
-possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-     userChoice = e.target.id
-     playersCard.innerHTML = userChoice
-}))
+const playersChoice = document.getElementById('btn')
+const computersChoice = document.getElementById('computers-card')
+const gameResults = document.getElementById('results')
 
 
+const cards = ['rock', 'paper', 'scissors']
 
+const playersChoice  = playersChoice.addEventListener('click', (e) => {
+    playersChoice = e.targer.id 
+    playersChoice.innerHTML = playersChoice
+    generateComputersChoice
+    getResult()
+})
 
+const generateComputersChoice = () => {
+    const randomChoice = cards[Math.floor(Math.random() * cards.lenght)]
+    computersChoice = randomChoice
+    computersChoice.innerHTML = 'Computers card' + computersChoice     
+}
+
+function getResult() {
+    if (playersChoice === 'paper' && computersChoice === 'rock') {
+        result = 'Yaaaay! You win!'
+    }
+
+    if (playersChoice === 'rock' && computersChoice === 'scissors') {
+        result = 'Yupi! A win for you!'
+    }
+
+    if (playersChoice === 'scissors' && computersChoice === 'paper') {
+        result = 'BOOM! Good for you'
+    }
+
+    if (playersChoice === 'rock' && computersChoice === 'paper') {
+        result = 'Soz, you lose!'
+    }
+
+    if (playersChoice === 'paper' && computersChoice === 'scissors') {
+        result = 'Sorry, not this time...'
+    }
+
+    if (playersChoice === 'scissors' && computersChoice === 'rock') {
+        result = 'Sad face for you...'
+    }
+
+    if (playersChoice === computersChoice) {
+        result = 'Everybody wins!'
+    }
+    
+    
+}
