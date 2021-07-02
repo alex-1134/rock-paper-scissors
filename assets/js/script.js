@@ -1,16 +1,13 @@
-/*let playersChoice;
-let computersChoice;
-let gameResults; */
 
-const playersChoice = document.getElementById('btn')
+/* const playersChoice = document.getElementById('btn') */
 const computersChoice = document.getElementById('computers-card')
 const gameResults = document.getElementById('results')
 
 
 const cards = ['rock', 'paper', 'scissors']
 
-const playersChoice  = playersChoice.addEventListener('click', (e) => {
-    playersChoice = e.targer.id 
+const playersChoice  = document.getElementById('btn').addEventListener('click', (e) => {
+    playersChoice = e.target.id 
     playersChoice.innerHTML = playersChoice
     generateComputersChoice
     getResult()
@@ -50,6 +47,5 @@ function getResult() {
     if (playersChoice === computersChoice) {
         result = 'Everybody wins!'
     }
-    
     
 }
