@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [ 
         {
             name: '1',
-            img: 'images/1.jpg'
+            img: 'assets/images/1.jpg'
         },
         {
             name: '2',
@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: '5',
-            img: 'assets/images/5.jpg'
+            img: './assets/images/5.jpg'
         },
         {
             name: '6',
-            img: 'images/6.jpg'
+            img: '/images/6.jpg'
         },
         {
             name: '7',
