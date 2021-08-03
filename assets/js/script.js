@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: '5',
-            img: 'images/5.jpg'
+            img: 'assets/images/5.jpg'
         },
         {
             name: '6',
