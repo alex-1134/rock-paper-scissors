@@ -1,39 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
  
-    const cardArray = [ 
-        {
-            name: '1',
-            img: 'assets/images/1.jpg'
-        },
-        {
-            name: '2',
-            img: 'images/2.jpg'
-        },
-        {
-            name: '3',
-            img: 'images/3.jpg'
-        },
-        {
-            name: '4',
-            img: 'images/4.jpg'
-        },
-        {
-            name: '5',
-            img: './assets/images/5.jpg'
-        },
-        {
-            name: '6',
-            img: '/images/6.jpg'
-        },
-        {
-            name: '7',
-            img: 'images/7.jpg'
-        },
-        {
-            name: '8',
-            img: 'images/8.jpg'
-        },
-    ]
+    const cards = {
+        card1: 'card-1',
+        card2: 'card-2',
+        card3: 'card-3',
+        card4: 'card-4',
+        card5: 'card-5',
+        card6: 'card-6' 
+    };
 
     const grid = document.querySelector('.grid')
 
@@ -66,4 +40,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-})
